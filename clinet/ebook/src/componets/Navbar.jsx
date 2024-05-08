@@ -9,7 +9,7 @@ const Navbar = () => {
     </>)
 
     return (
-        <div className='m max-w-screen-2xl container mx-auto md:px-20 px-4'>
+        <div className='m max-w-screen-2xl container mx-auto md:px-20 px-4  fixed top-0 left-0 right-0 scroll-smooth focus:scroll-auto'>
             <div className="navbar bg-base-100">
   <div className="navbar-start">
     <div className="dropdown">
@@ -21,7 +21,7 @@ const Navbar = () => {
       </ul>
     </div>
     <a className=" text-2xl c cursor-pointer font-mono font-bold">Open Library</a>
-  </div>
+  </div> 
 
   <div className="navbar-end space-x-3">
 <div className="navbar-center hidden lg:flex">
