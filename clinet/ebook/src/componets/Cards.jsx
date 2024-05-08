@@ -15,7 +15,7 @@ const Cards = ({item}) => {
                 <p>{item.title}</p>
                 <div className="card-actions justify-between">
                   <div className="badge badge-outline">{item.price} $</div> 
-                  <div className=" badge badge-outline hover:bg-blue-400 duration-30 hover:text-white">Read Now!</div>
+                  <div className="c cursor-pointer p-3 badge badge-outline hover:bg-blue-400 duration-30 hover:text-white">Read Now!</div>
                 </div>
               </div>
             </div>

@@ -2,8 +2,8 @@ import React from 'react';
 
 const Navbar = () => {
   const Navitems = ( <>
-        <li><a>Home</a></li>
-        <li><a>FreeBooks</a></li>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/course'>FreeBooks</a></li>
         <li><a>Contact</a></li>
         <li><a>About</a></li>
     </>)
