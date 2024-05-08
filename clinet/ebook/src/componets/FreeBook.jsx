@@ -52,7 +52,7 @@ const FreeBook = () => {
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur delectus ut magnam unde qeniam consequatur reiciendis, fugiat enim culpa ratione vitae ut!</p>
             </div>
 
-         <div>
+         <div className='md:m-4 mt-2 mr-2'>
          <Slider {...setting}>
          {freeBook.map((item)=>(
             <Cards item={item} key={item.id}/>
