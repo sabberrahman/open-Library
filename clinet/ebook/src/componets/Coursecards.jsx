@@ -7,7 +7,7 @@ const Coursecards = () => {
     console.log(list);
     return (
         <>
-        <div className='max-w-screen-2xl container mx-auto md:px-20 px-4'>
+        <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-gray-100'>
             <div className='mt-28 items-center justify-center text-center'>
               <h1 className='text-2xl md:text-4xl'>welcome to the all book section <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>EXPORE!!</span></h1>
               <p className='mt-6'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, quis maiores? Laudantium soluta ipsa ut.</p>

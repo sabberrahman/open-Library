@@ -9,7 +9,7 @@ const Courses = () => {
     return (
         <>
         <Navbar/>
-        <div className='m min-h-screen'>
+        <div className='min-h-screen '>
           <Coursecards/>  
         </div>
         

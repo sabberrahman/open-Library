@@ -7,7 +7,29 @@ import Cards from './Cards';
 
 const FreeBook = () => {
     const freeBook= list.filter((data)=>data.catagory=== "free");
-    console.log(freeBook);
+
+    function SampleNextArrow(props) {
+      const { className, style, onClick } = props;
+      return (
+        <div
+          className={className}
+          style={{ ...style, display: "block", background: "black" }}
+          onClick={onClick}
+        />
+      );
+    }
+
+    function SamplePrevArrow(props) {
+      const { className, style, onClick } = props;
+      return (
+        <div
+          className={className}
+          style={{ ...style, display: "block", background: "black" }}
+          onClick={onClick}
+        />
+      );
+    }
+    
     const setting= {
           dots: true,
           infinite: false,
@@ -15,6 +37,8 @@ const FreeBook = () => {
           slidesToShow: 3,
           slidesToScroll: 3,
           initialSlide: 0,
+          nextArrow: <SampleNextArrow />,
+          prevArrow: <SamplePrevArrow />,
           responsive: [
             {
               breakpoint: 1024,
@@ -52,7 +76,7 @@ const FreeBook = () => {
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur delectus ut magnam unde qeniam consequatur reiciendis, fugiat enim culpa ratione vitae ut!</p>
             </div>
 
-         <div className='md:m-4 mt-2 mr-2 '>
+         <div className='md:m-4 mt-2 mr-2  '>
          <Slider {...setting}>
          {freeBook.map((item)=>(
             <Cards item={item} key={item.id}/>
