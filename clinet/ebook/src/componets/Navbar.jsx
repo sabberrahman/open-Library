@@ -1,12 +1,23 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const Navitems = ( <>
-        <li><a href='/'>Home</a></li>
-        <li><a href='/course'>FreeBooks</a></li>
+        <li><a onClick={(e)=>handleHome(e)} >Home</a></li>
+        <li><a onClick={(e)=>handleCourse(e)}>FreeBooks</a></li>
         <li><a>Contact</a></li>
         <li><a>About</a></li>
     </>)
+
+    const handleCourse=(e)=>{
+      e.preventDefault();
+     return navigate("/course");
+    }
+    const handleHome=(e)=>{
+      e.preventDefault();
+     return navigate("/");
+    }
 
     return (
         <div className='m max-w-screen-2xl container mx-auto md:px-20 px-4  fixed top-0 left-0 right-0 scroll-smooth focus:scroll-auto z-10'>
