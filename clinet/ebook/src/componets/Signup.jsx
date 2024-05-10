@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Login from './Login';
 
 const Signup = () => {
     return (
@@ -7,7 +8,7 @@ const Signup = () => {
            
            
             <div id="" className="flex h-screen justify-center items-center flex-col ">
-  <div className="modal-box dark:text-white  ">
+  <div className="modal-box dark:text-white w md:w-[600px] ">
   <form method="dialog">
       {/* if there is a button in form, it will close the modal */}
       <Link to='/' className="btn btn-md btn-circle btn-ghost absolute right-2 top-2">✕</Link>
@@ -31,8 +32,9 @@ const Signup = () => {
     </div>
 
     <div className='flex justify-evenly mt-6 md:text-xl'>
-        <button className='bg-indigo-500 shadow-lg shadow-indigo-500/50 btn text-white font-semibold md:text-xl'>Login</button>
-        <p className=' m-2'>Already Registered? <Link to={"/"} className='underline cursor-pointer text-blue-500 font-semibold '>Login</Link></p>
+        <button className='bg-indigo-500 shadow-lg shadow-indigo-500/50 btn text-white font-semibold md:text-xl'>Signup</button>
+        <p className=' m-2'>Already Registered? <a className='underline cursor-pointer text-blue-500 font-semibold '  onClick={()=>document.getElementById('my_modal_3').showModal()}>Login</a></p>
+        <Login/>
     </div>
   </div>
 </div>
