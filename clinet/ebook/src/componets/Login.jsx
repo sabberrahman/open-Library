@@ -24,7 +24,7 @@ const Login = () => {
 
     <div className='flex justify-evenly mt-6 '>
         <button className='bg-indigo-500 shadow-lg shadow-indigo-500/50 btn text-white  '>Login</button>
-        <p className=' m-2'>Not Registered? <Link to={"/signup"} className='underline cursor-pointer text-blue-500  m-2'>SignUp</Link></p>
+        <p className=' m-2'>Not Registered? <Link to={"/signup"} className='underline cursor-pointer text-blue-500 '>SignUp</Link></p>
     </div>
   </div>
 </dialog>
