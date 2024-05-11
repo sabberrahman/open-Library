@@ -3,15 +3,16 @@ import express from 'express'
 import dotenv from 'dotenv'
 const app = express()
 import mongoose from 'mongoose'
+import bookRoute from './route/book_route.js'
 
 dotenv.config();
 const port =    process.env.PORT || 4000 ; 
 
-const uri = "mongodb+srv://sabber:wPQqZ2KLGcT8AjOM@cluster0.0zldvew.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const url = process.env.url;
 
 async function connectToMongo() {
   try {
-    await mongoose.connect(uri);
+    await mongoose.connect(url);
     console.log("Connected to MongoDB successfully!");
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
@@ -21,8 +22,11 @@ async function connectToMongo() {
 
 connectToMongo(); 
 
+// defines routes
+app.use('/book', bookRoute);
+
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Hola world!')
 })
 
 app.listen(port, () => {
