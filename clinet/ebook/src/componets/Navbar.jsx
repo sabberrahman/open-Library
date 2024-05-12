@@ -22,8 +22,8 @@ const Navbar = () => {
   const Navitems = ( <>
         <li><a onClick={(e)=>handleHome(e)} >Home</a></li>
         <li><a onClick={(e)=>handleCourse(e)}>FreeBooks</a></li>
-        <li><a>Contact</a></li>
-        <li><a>About</a></li>
+        <li><a href='https://github.com/sabberrahman/open-Library' target='_blank'>Github</a></li>
+        <li><a onClick={(e)=>handleAbout(e)}>About</a></li>
     </>)
 
     const handleCourse=(e)=>{
@@ -33,6 +33,10 @@ const Navbar = () => {
     const handleHome=(e)=>{
       e.preventDefault();
      return navigate("/");
+    }
+    const handleAbout=(e)=>{
+      e.preventDefault();
+     return navigate("/about");
     }
 
     return (
@@ -47,7 +51,7 @@ const Navbar = () => {
         {Navitems}
       </ul>
     </div>
-    <a className=" text-2xl c cursor-pointer font-mono font-bold">Open Library</a>
+    <a className=" text-2xl c cursor-pointer font-mono font-bold" onClick={(e)=>handleHome(e)} >Open Library</a>
   </div> 
 
   <div className="navbar-end space-x-3">
