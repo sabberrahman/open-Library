@@ -4,6 +4,8 @@ import dotenv from 'dotenv'
 const app = express()
 import mongoose from 'mongoose'
 import bookRoute from './route/book_route.js'
+import userRoute from './route/user_route.js'
+import cors from 'cors'
 
 dotenv.config();
 const port =    process.env.PORT || 4000 ; 
@@ -22,8 +24,12 @@ async function connectToMongo() {
 
 connectToMongo(); 
 
+//midlewere
+app.use(cors());
+
 // defines routes
 app.use('/book', bookRoute);
+app.use('/user',userRoute)
 
 app.get('/', (req, res) => {
   res.send('Hola world!')

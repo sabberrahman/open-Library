@@ -79,7 +79,7 @@ export default function About() {
           ))}
           
         </div>
-        <div>
+        <div className='mx-auto mt-10 flex j justify-center items-center gap-x-8 gap-y-16'>
           
             <img src="https://th.bing.com/th/id/OIP.G_rPqmbGERBIgnEE-OWW9AAAAA?w=474&h=581&rs=1&pid=ImgDetMain" className='mt-4 object-cover w-60 md:ml-32' />
           
