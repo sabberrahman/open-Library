@@ -24,8 +24,9 @@ async function connectToMongo() {
 
 connectToMongo(); 
 
-//midlewere
+//midlewere 1. solve 2 diff port problem, 2. make data coming from body in json formate
 app.use(cors());
+app.use(express.json());
 
 // defines routes
 app.use('/book', bookRoute);
