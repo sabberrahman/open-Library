@@ -1,7 +1,7 @@
 [
     {
         "id":1 ,
-        "name":"storybook",
+        "name":"Storybook",
         "title":"land of the kings and lord of the ring",
         "price":39,
         "catagory":"free" ,
@@ -13,26 +13,26 @@
         "name":"storybook",
         "title":"land of the kings and lord of the ring",
         "price":39,
-        "catagory":"paid" ,
-        "image":"https://th.bing.com/th/id/R.3e0ce0cd7051b7c366554fe360372767?rik=g9Ueca0yz43ALg&pid=ImgRaw&r=0"
+        "catagory":"free" ,
+        "image":"https://th.bing.com/th/id/OIP.7uVZjSOnmD0sSPUmst4QZwAAAA?rs=1&pid=ImgDetMain"
 
     },
     {
         "id":3 ,
-        "name":"sad book",
+        "name":"Novel",
         "title":"land of the kings and lord of the ring",
         "price":39,
         "catagory":"free" ,
-        "image":"https://th.bing.com/th/id/R.3e0ce0cd7051b7c366554fe360372767?rik=g9Ueca0yz43ALg&pid=ImgRaw&r=0"
+        "image":"https://cdn.sanity.io/images/p34gzxcg/production/7635c996b98d1762e7530fe157b599284de70123-750x1050.jpg?auto=format&w=500&fit=scale"
 
     },
     {
         "id":4 ,
-        "name":"storybook",
+        "name":"Philoshopy",
         "title":"land of the kings and lord of the ring",
         "price":12,
         "catagory":"free" ,
-        "image":"https://th.bing.com/th/id/R.3e0ce0cd7051b7c366554fe360372767?rik=g9Ueca0yz43ALg&pid=ImgRaw&r=0"
+        "image":"https://cdn.sanity.io/images/p34gzxcg/production/3b8e68554cac2745cc646cd669459b5e14e3a20b-831x1200.jpg?auto=format&w=200&fit=scale"
 
     },
     {
@@ -41,7 +41,7 @@
         "title":"land of the kings and lord of the ring",
         "price":20,
         "catagory":"free" ,
-        "image":"https://th.bing.com/th/id/R.3e0ce0cd7051b7c366554fe360372767?rik=g9Ueca0yz43ALg&pid=ImgRaw&r=0"
+        "image":"https://cdn.sanity.io/images/p34gzxcg/production/7977d3dee05663030b2d7c4c3019222b8106ac77-342x513.jpg?auto=format&w=200&fit=scale"
 
     },
     {
@@ -50,7 +50,7 @@
         "title":"land of the kings and lord of the ring",
         "price":30,
         "catagory":"free" ,
-        "image":"https://th.bing.com/th/id/R.3e0ce0cd7051b7c366554fe360372767?rik=g9Ueca0yz43ALg&pid=ImgRaw&r=0"
+        "image":"https://cdn.sanity.io/images/p34gzxcg/production/c77531c4513546a50d8dd90eeedfac05a4066897-716x1108.jpg?auto=format&w=200&fit=scale"
 
     },
     {
@@ -59,7 +59,7 @@
         "title":"land of the kings and lord of the ring",
         "price":40,
         "catagory":"free" ,
-        "image":"https://th.bing.com/th/id/R.3e0ce0cd7051b7c366554fe360372767?rik=g9Ueca0yz43ALg&pid=ImgRaw&r=0"
+        "image":"https://cdn.sanity.io/images/p34gzxcg/production/f2af2a49ee01dd6b98bf3d6be8ca7f15a1969825-6000x9600.jpg?auto=format&w=200&fit=scale"
 
     },
     {
@@ -68,7 +68,7 @@
         "title":"land of the kings and lord of the ring",
         "price":50,
         "catagory":"free" ,
-        "image":"https://th.bing.com/th/id/R.3e0ce0cd7051b7c366554fe360372767?rik=g9Ueca0yz43ALg&pid=ImgRaw&r=0"
+        "image":"https://cdn.sanity.io/images/p34gzxcg/production/b36107c5329a38707200543abd3e21862c5ea38d-1556x2400.jpg?auto=format&w=200&fit=scale"
 
     },
     {
@@ -77,7 +77,7 @@
         "title":"land of the kings and lord of the ring",
         "price":8,
         "catagory":"free" ,
-        "image":"https://th.bing.com/th/id/R.3e0ce0cd7051b7c366554fe360372767?rik=g9Ueca0yz43ALg&pid=ImgRaw&r=0"
+        "image":"https://cdn.sanity.io/images/p34gzxcg/production/b3842b1c0661d9e5e1996bc1a36fe826d7cdd583-415x640.jpg?auto=format&w=200&fit=scale"
 
     },
     {
@@ -86,7 +86,7 @@
         "title":"land of the kings and lord of the ring",
         "price":0,
         "catagory":"free" ,
-        "image":"https://th.bing.com/th/id/R.3e0ce0cd7051b7c366554fe360372767?rik=g9Ueca0yz43ALg&pid=ImgRaw&r=0"
+        "image":"https://cdn.sanity.io/images/p34gzxcg/production/e7f195ea22ce95690907acf131207a3531ec7fba-1557x2400.jpg?auto=format&w=200&fit=scale"
 
     },
     {
@@ -95,7 +95,7 @@
         "title":"land of the kings and lord of the ring",
         "price":0,
         "catagory":"free" ,
-        "image":"https://th.bing.com/th/id/R.3e0ce0cd7051b7c366554fe360372767?rik=g9Ueca0yz43ALg&pid=ImgRaw&r=0"
+        "image":"https://cdn.sanity.io/images/p34gzxcg/production/776a7f5943f3043d8f552e9de501ebcd49ae761f-1400x2158.jpg?auto=format&w=200&fit=scale"
 
     },
     {
@@ -104,7 +104,7 @@
         "title":"land of the kings and lord of the ring",
         "price":0,
         "catagory":"free" ,
-        "image":"https://th.bing.com/th/id/R.3e0ce0cd7051b7c366554fe360372767?rik=g9Ueca0yz43ALg&pid=ImgRaw&r=0"
+        "image":"https://cdn.sanity.io/images/p34gzxcg/production/51f6017351ccc513ae7c5f73f98873f1b89e27b6-705x1102.jpg?auto=format&w=200&fit=scale"
 
     }
 ]
