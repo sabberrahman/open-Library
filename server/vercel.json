@@ -1,27 +1,26 @@
 {
-    "version":2,
-    "builds": [
-      { "src": "*.js", "use": "@vercel/node" }
-    ],
-    "routes": [
+  "version": 2,
+  "builds": [
+    { "src": "*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "headers": [
+    {
+      "headers": [
         {
-          "src": "/(.*)",
-          "dest": "/"
+          "key": "Access-Control-Allow-Origin",
+          "value": "https://open-library-psi.vercel.app"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, PUT, DELETE, OPTIONS"
         }
-    ],
-    "headers": [
-      {
-        "for": "/user/signup",  
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "https://open-library-psi.vercel.app"  
-          },
-          {
-            "key": "Access-Control-Allow-Methods",
-            "value": "GET, POST, PUT, DELETE, OPTIONS"  
-          }
-         
-        ]
-      }]
-  }
+      ]
+    }
+  ]
+}
