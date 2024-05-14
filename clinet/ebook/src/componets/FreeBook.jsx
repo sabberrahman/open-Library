@@ -73,7 +73,7 @@ const FreeBook = () => {
         <div className='max-w-screen-2xl container mx-auto md:px-20 px-4'>
             <div>
                 <h1 className='text-xl font-semibold pb-2'>Free Books </h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur delectus ut magnam unde qeniam consequatur reiciendis, fugiat enim culpa ratione vitae ut!</p>
+            <p>Learn and expore ! SignUp to get access to our all premium books✨</p>
             </div>
 
          <div className='md:m-4 mt-2 mr-2  '>

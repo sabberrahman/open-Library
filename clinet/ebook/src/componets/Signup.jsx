@@ -1,21 +1,50 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import Login from './Login';
 import { useForm } from "react-hook-form"
+import axios from 'axios'
+import toast from 'react-hot-toast';
 
 const Signup = () => {
+  // const navigate= useNavigate();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm()
 
-  const onSubmit = (data) => console.log(data)
+  const onSubmit = async (data) => {
+    console.log(data);
+    const dataInfo = {
+      fullname:data.fullname,
+      email:data.email ,
+      password:data.password
+    }
+    await axios.post('http://localhost:4001/user/signup', dataInfo).then((res=>{
+      console.log(res);
+      console.log(res.data);
+      if (res) {
+        toast.success('Signup Successfull');
+        window.location.href = '/course';
+      } 
+      localStorage.setItem('user', JSON.stringify(res.data.user))
+      console.log(res.data);
+    })).catch((err)=>{
+      console.log(err);
+       if (err.response) {
+        console.log(err);
+      toast.error("error: "+ err.response.data);
+       }
+    })
+  }
     return (
         <>
            
            
             <div id="" className="flex h-screen justify-center items-center flex-col ">
+              <div className='flex justify-center items-center mb-2 text-xl md:text-2xl'>
+            <h1>To access all premium Book Please <span className='bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 md:text-3xl md:mb-6'>SignUp</span></h1>
+           </div>
   <div className="modal-box dark:text-white w md:w-[600px] ">
   <form method="dialog">
       {/* if there is a button in form, it will close the modal */}
@@ -35,8 +64,8 @@ const Signup = () => {
 <label className="input input-bordered flex items-center gap-2 mt-4 mb-2">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" /></svg>
   <input type="text" className="grow" placeholder="Username" 
-  {...register("username", { required: true })}/>
-  {errors.username && <span className='text-sm text-red-600 '>This field is required</span>}
+  {...register("fullname", { required: true })}/>
+  {errors.fullname && <span className='text-sm text-red-600 '>This field is required</span>}
 </label>
 
 <label className="input input-bordered flex items-center gap-2">

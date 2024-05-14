@@ -28,9 +28,10 @@ connectToMongo();
 app.use(cors());
 app.use(express.json());
 
-// defines routes
+// defines routes+ create database+ it add "s"
 app.use('/book', bookRoute);
-app.use('/user',userRoute)
+app.use('/user',userRoute);
+
 
 app.get('/', (req, res) => {
   res.send('Hola world!')

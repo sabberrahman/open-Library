@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Login from './Login';
+import { useAuth } from "../context/AuthProvider";
+import Logout from './Logout';
+
 
 const Navbar = () => {
+  const [authUser, setAuthUser] = useAuth();
+  console.log(authUser);
+  
 
   const [theme,setTheme]=useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
   const element= document.documentElement;
@@ -21,7 +27,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const Navitems = ( <>
         <li><a onClick={(e)=>handleHome(e)} >Home</a></li>
-        <li><a onClick={(e)=>handleCourse(e)}>FreeBooks</a></li>
+        <li><a onClick={(e)=>handleCourse(e)}>AllPremium🔐</a></li>
         <li><a href='https://github.com/sabberrahman/open-Library' target='_blank'>Github</a></li>
         <li><a onClick={(e)=>handleAbout(e)}>About</a></li>
     </>)
@@ -86,11 +92,15 @@ const Navbar = () => {
   
 </label>
   </div>
-  
-  <div className="">
+
+  {
+    authUser?<Logout/>:<div className="">
     <a className="btn bg-black text-white px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer"  onClick={()=>document.getElementById('my_modal_3').showModal()}>Login</a>
     <Login/>
   </div>
+  }
+  
+  
   </div >
   
 </div>
