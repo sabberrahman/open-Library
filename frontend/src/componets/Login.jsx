@@ -17,7 +17,7 @@ const Login = () => {
       email:data.email ,
       password:data.password
     }
-    await axios.post('http://localhost:4002/user/login', dataInfo).then((res=>{
+    await axios.post('https://open-library-api.vercel.app/user/login', dataInfo).then((res=>{
       console.log(res);
       console.log(res.data);
       if (res) {

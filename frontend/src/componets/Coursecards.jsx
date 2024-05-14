@@ -9,7 +9,7 @@ const Coursecards = () => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.get('http://localhost:4002/book');
+            const response = await axios.get('https://open-library-api.vercel.app/book');
             console.log(response);
             setBook(response.data);
           } catch (error) {
