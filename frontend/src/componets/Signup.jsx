@@ -16,26 +16,26 @@ const Signup = () => {
   const onSubmit = async (data) => {
     console.log(data);
     const dataInfo = {
-      fullname:data.fullname,
-      email:data.email ,
-      password:data.password
+      fullname: data.fullname,
+      email: data.email,
+      password: data.password
     }
-    await axios.post('https://open-library-api.vercel.app/user/signup', dataInfo).then((res=>{
-      console.log(res);
-      console.log(res.data);
-      if (res) {
-        toast.success('Signup Successfull');
-        window.location.href = '/course';
-      } 
-      localStorage.setItem('user', JSON.stringify(res.data.user))
-      console.log(res.data);
-    })).catch((err)=>{
-      console.log(err);
-       if (err.response) {
-        console.log(err);
-      toast.error("error: "+ err.response.data);
-       }
-    })
+    try {
+      const response = await axios.post('https://open-library-api.vercel.app/user/signup', dataInfo);
+      console.log(response);
+      console.log(response.data);
+      toast.success('Signup Successful');
+      window.location.href = '/course';
+      localStorage.setItem('user', JSON.stringify(response.data.user));
+    } catch (err) {
+      console.error(err);
+      if (err.response) {
+        console.error(err);
+        toast.error("Error: " + err.response.data);
+      } else {
+        toast.error("Network Error"); // Handle generic network errors
+      }
+    }
   }
     return (
         <>
