@@ -6,6 +6,7 @@ import mongoose from 'mongoose'
 import bookRoute from './route/book_route.js'
 import userRoute from './route/user_route.js'
 import cors from 'cors'
+import path from 'path'
 
 dotenv.config();
 const port =    process.env.PORT || 4000 ; 
@@ -31,6 +32,7 @@ app.use(express.json());
 // defines routes+ create database+ it add "s"
 app.use('/book', bookRoute);
 app.use('/user',userRoute);
+
 
 
 app.get('/', (req, res) => {
