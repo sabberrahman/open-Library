@@ -25,8 +25,14 @@ async function connectToMongo() {
 
 connectToMongo(); 
 
-//midlewere 1. solve 2 diff port problem, 2. make data coming from body in json formate
-app.use(cors());
+//midlewere 1. solve 2 diff port problem, 2. make data coming from body in json formate ..1.updated to deploy
+app.use(cors(
+  {
+  origin:[""],
+  methods:["POST","GET" ],
+  credentials: true
+  }
+));
 app.use(express.json());
 
 // defines routes+ create database+ it add "s"

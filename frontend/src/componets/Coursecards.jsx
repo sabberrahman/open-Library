@@ -9,7 +9,7 @@ const Coursecards = () => {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.get('http://localhost:4001/book');
+            const response = await axios.get('http://localhost:4002/book');
             console.log(response);
             setBook(response.data);
           } catch (error) {
