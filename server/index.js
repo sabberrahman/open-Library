@@ -28,7 +28,7 @@ connectToMongo();
 //midlewere 1. solve 2 diff port problem, 2. make data coming from body in json formate ..1.updated to deploy
 app.use(cors(
   {
-  origin:[""],
+  origin:["https://open-library-psi.vercel.app"],
   methods:["POST","GET" ],
   credentials: true
   }
