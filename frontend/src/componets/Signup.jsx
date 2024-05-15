@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link,  useNavigate } from 'react-router-dom';
 import Login from './Login';
 import { useForm } from "react-hook-form"
 import axios from 'axios'
@@ -14,6 +14,7 @@ const Signup = () => {
   } = useForm()
 
   const onSubmit = async (data) => {
+    const navigate = useNavigate();
     console.log(data);
     const dataInfo = {
       fullname: data.fullname,
@@ -25,7 +26,7 @@ const Signup = () => {
       console.log(response);
       console.log(response.data);
       toast.success('Signup Successful');
-      window.location.href = '/course';
+      navigate('/course');
       localStorage.setItem('user', JSON.stringify(response.data.user));
     } catch (err) {
       console.error(err);
