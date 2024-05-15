@@ -6,7 +6,7 @@ import axios from 'axios'
 import toast from 'react-hot-toast';
 
 const Signup = () => {
-  // const navigate= useNavigate();
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -14,7 +14,7 @@ const Signup = () => {
   } = useForm()
 
   const onSubmit = async (data) => {
-    const navigate = useNavigate();
+  
     console.log(data);
     const dataInfo = {
       fullname: data.fullname,
@@ -26,8 +26,10 @@ const Signup = () => {
       console.log(response);
       console.log(response.data);
       toast.success('Signup Successful');
-      navigate('/course');
       localStorage.setItem('user', JSON.stringify(response.data.user));
+     navigate('/');
+      window.location.reload()
+      
     } catch (err) {
       console.error(err);
       if (err.response) {
