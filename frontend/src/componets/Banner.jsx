@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -14,8 +15,7 @@ const Banner = () => {
                         <input type="text" className=" grow outline-none bg-transparent " placeholder="Email" /></label>
 
                  </div> 
-                    <button class="bg-indigo-500 shadow-lg shadow-indigo-500/50 btn text-white  mt-6 text-xl font-mono">Subscribe</button> 
-
+                   <Link to='/course' class="bg-indigo-500 shadow-lg shadow-indigo-500/50 btn text-white  mt-6 text-xl font-mono">All Books ↗</Link> 
                     
                 </div>
                 <div className='w-full md:w-1/2 order-1'>
