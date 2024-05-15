@@ -21,7 +21,7 @@ const Signup = () => {
       password: data.password
     }
     try {
-      const response = await axios.post('https://open-library-api.vercel.app/user/signup', dataInfo);
+      const response = await axios.post('https://openapi-94bu.onrender.com/user/signup', dataInfo);
       console.log(response);
       console.log(response.data);
       toast.success('Signup Successful');
